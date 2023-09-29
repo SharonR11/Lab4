@@ -4,15 +4,13 @@
              x:Class="Lab4.Page2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!" BackgroundColor="Yellow"
+            <Label Text="Page 2" BackgroundColor="Azure"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             
-            <Button BackgroundColor="Red" Text="Regresar"
-                    Clicked="Button_Clicked"    />
+            <Button BackgroundColor="Red" Text="Previous Page"
+                    Clicked="OnPreviousPageButtonClicked"    />
             
-            <Button BackgroundColor="Coral" Text="Pagina1"
-                    Clicked="Button_Clicked_1"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

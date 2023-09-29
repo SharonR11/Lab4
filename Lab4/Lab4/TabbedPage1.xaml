@@ -9,16 +9,4 @@
         </StackLayout>
   </ContentPage>
     
-    <ContentPage Title="Tab 2" >
-        <StackLayout>
-            <Button Text="Mi 2 boton"></Button>
-        </StackLayout>
-    </ContentPage>
-    
-    <ContentPage Title="Tab 3" >
-        <StackLayout>
-            <Button Text="Mi 3 boton"></Button>
-        </StackLayout>
-    </ContentPage>
-    
 </TabbedPage>

@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Lab4
 {
     public partial class App : Application
@@ -11,7 +12,8 @@ namespace Lab4
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new NavigationPage(new Page1());
+            //MainPage = new NavigationPage(new Page1());
+            MainPage = new NavigationPage(new MainPage());
 
         }
 

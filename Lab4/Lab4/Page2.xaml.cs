@@ -17,14 +17,10 @@ namespace Lab4
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        async void OnPreviousPageButtonClicked(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            await Navigation.PopAsync();
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Page1());
-        }
     }
 }

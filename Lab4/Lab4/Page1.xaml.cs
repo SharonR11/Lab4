@@ -15,12 +15,25 @@ namespace Lab4
         public Page1()
         {
             InitializeComponent();
+
+            btnClose.Clicked += async (sender, e) =>
+            {
+                await Navigation.PopAsync();
+            };
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+
+
+        async void OnNextPageButtonClicked(object sender, EventArgs e)
         {
-            Page2 page2= new Page2();
-            await Navigation.PushAsync(page2);
+            await Navigation.PushAsync(new Page2());
         }
+
+        //private void Button_Clicked(object sender, EventArgs e)
+        //{
+        //    Page2 page2= new Page2();
+        //    await Navigation.PushAsync(page2);
+        //}
+
     }
 }

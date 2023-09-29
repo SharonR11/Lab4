@@ -4,15 +4,20 @@
              x:Class="Lab4.Page1">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!" BackgroundColor="Gold"
+            <Label Text="First Form" BackgroundColor="Gold"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             
-            <Entry Placeholder="Nombre"></Entry>
-            
-            <Button Text="Pagina 2"
+            <!--<Entry Placeholder="Nombre"></Entry>-->
+
+            <Button Text="Next Page" Clicked="OnNextPageButtonClicked"/>
+            <Button Text="Close" x:Name="btnClose"/>
+
+            <!--<Button Text="Pagina 2"
                     Clicked="Button_Clicked"
-                    BackgroundColor="Red"/>
+                    BackgroundColor="Red"/>-->
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
